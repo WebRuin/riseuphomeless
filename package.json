@@ -1,0 +1,33 @@
+{
+  "name": "Rise_Up",
+  "version": "0.0.0",
+  "description": "Web Site for Case Managers, other professional, and families to finf resources to help the helpless/mentaly disabled/addticted.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebRuin/rise-up.git"
+  },
+  "keywords": [
+    "add",
+    "some"
+  ],
+  "author": "Partners In Code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebRuin/rise-up/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-postcss": "^6.1.0"
+  },
+  "dependencies": {
+    "csswring": "^4.2.1",
+    "draft-js": "^0.1.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
