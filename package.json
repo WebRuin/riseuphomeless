@@ -22,7 +22,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-imagemin": "^2.4.0",
-    "gulp-postcss": "^6.1.0"
+    "gulp-postcss": "^6.1.0",
+    "run-sequence": "^1.1.5"
   },
   "dependencies": {
     "csswring": "^4.2.1",

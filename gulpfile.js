@@ -3,11 +3,12 @@ var gulp = require('gulp');
 var autoprefixer = require('autoprefixer');
 var mqpacker = require('css-mqpacker');
 var csswring = require('csswring');
+var runSequence = require('run-sequence');
 
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant'); // $ npm i -D imagemin-pngquant
 
-gulp.task('images', () => {
+gulp.task('img', () => {
     return gulp.src('src/img/*')
         .pipe(imagemin({
             progressive: true,
@@ -18,7 +19,7 @@ gulp.task('images', () => {
             ],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dest/images'));
+        .pipe(gulp.dest('dest/img'));
 });
 
 gulp.task('css', function () {
@@ -31,3 +32,9 @@ gulp.task('css', function () {
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dest/css/'));
 });
+
+gulp.task('default', function (callback) {
+  runSequence(['css','img'],
+    callback
+  )
+})
